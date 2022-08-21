@@ -1,0 +1,1229 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+html {
+    margin: 0;    
+}
+
+body, html {
+    height: 100%;
+}
+
+#load-overlay {
+    position: fixed;
+    background-color: #edf0f7;
+    width: 100%;
+    min-height: 100%;
+    /*box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 10px solid;
+    border-color: #edf0f7; */
+    z-index: 4;
+}
+
+#white-overlay {
+    position: fixed;
+    width: 96%;
+    height: 96%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0; 
+    margin: auto;
+    background-color: #ffffff;
+    position: absolute;
+    width: calc(100% -20px );
+    width: -webkit-calc(100% - 20px );
+    height: calc(100% -20px );
+    height: -webkit-calc(100% - 20px );
+    margin: auto auto;
+    z-index: 6;
+}
+
+#load-heading {
+    text-align: center;
+    font-family: "usual",sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 45px;
+    color: #ffffff; 
+    margin-bottom: 0em;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #ffffff;
+}
+
+#load-bar-cont {
+    width: 300px;
+    height: 300px;
+    top: 50%;
+    margin-top: -150px;
+    left: 50%;
+    margin-left: -150px; 
+    background-color: #ffffff;
+    position: absolute;
+}
+
+#load-bar {
+    position: absolute;
+    bottom: 15%;
+    width: 100%;
+    height: 0;
+    background-color: #002a7f;
+    z-index: 8;
+    background: linear-gradient(0deg, #002a7f, #edf0f7);
+}
+
+#grad-box {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #002a7f;
+    z-index: 5;
+    background: linear-gradient(0deg, #002a7f, #edf0f7);
+}
+
+
+
+#logo-overlay {
+    background-image: url("../img/logo_transparent.png");
+    width:320px;
+    height: 320px;
+    position: fixed;
+    z-index: 9;
+    top: 50%;
+    left: 50%;
+    margin-left: -160px;
+    margin-top: -160px;
+    background-size: contain;
+}
+
+#logo-underlay {
+    background-color: #edf0f7;
+    width: 250px;
+    height: 250px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -125px;
+    margin-left: -125px;
+    z-index: 7;
+}
+
+/*#bg {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 10px solid #002a7f;
+    position: fixed;
+    z-index: 99999;
+    background-color: #ffffff;
+}*/
+
+/*.cliptext {
+    color: #002a7f;
+    background: url("../img/landing_bg_sun.jpg") no-repeat center center;
+    background-clip: content-box;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    padding-bottom: 10px;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+
+    margin-top:-16px;
+    margin-left: -120px; 
+}*/
+
+h1 {
+    font-family: "usual",sans-serif;
+    font-weight: 800;
+    font-size: 29px; 
+    line-height: 45px;
+    color: #002a7f; 
+    margin-bottom: 0em;
+}
+
+h2 {
+    font-family: "usual",sans-serif;
+    font-weight: 800;
+    font-size: 20px; 
+    line-height: 28px;
+    color: #002a7f; 
+}
+
+h3 {
+    font-family: "usual",sans-serif;
+    font-weight: 800;
+    font-size: 16px; 
+    line-height: 26px;
+    color: #002a7f; 
+
+}
+
+p {
+    font-family: "adobe-garamond-pro",serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #002a7f;
+
+}
+
+a, .send-btn {
+    font-family: "usual", sans-serif;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: 0;
+}
+
+nav {
+    position: fixed;
+    width: 280px;
+    right: 0;
+    height: 100%;
+    list-style-type: none;
+    background-color:rgba(0, 42, 127, 1); 
+    color: #ffffff;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0;
+}
+
+#link-one, #link-two, #link-three, #link-four {
+    width: 126px;
+    border-bottom: 1px solid #ffffff;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+#nav-wrap {
+    width: 126px;
+    position: absolute;
+    left: 50%;
+    margin-left: -63px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+nav a {
+    font-family: "usual", sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    text-decoration: none;
+    color: #ffffff;
+    
+}
+
+nav a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#icon-wrap {
+    margin-left: 4px;
+}
+
+#nav-facebook, #nav-twitter, #nav-instagram {
+    display: inline;
+}
+
+#nav-twitter, #nav-instagram {
+    margin-left: 10px;
+}
+
+
+
+#logo {
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    background-image: url("../img/logo.png");
+    background-repeat: no-repeat;
+    width: 44px;
+    height: 44px;
+}
+
+.close-button {
+    z-index: 999;
+    position: fixed;
+    font-size: 30px;
+    right: 45px;
+    top: 25px;
+    font-size: 32px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.close-nav {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    right: -280px;
+}
+
+.open-nav {
+    position: fixed;
+    background-color:rgba(0, 42, 127, 1);
+    z-index: 9999;
+    width: 280px;
+    height: 100%;
+    right: 0;
+}
+
+#nav-button {
+    position: fixed;
+    top: 37px;
+    right: 39px;
+    cursor: pointer;
+    padding: 5px;
+    height: 14px;
+}
+
+#nav-button, #logo {
+    z-index: 2;
+}
+
+.menu-icon {
+    background-color: #ffffff;
+}
+
+.add-menu-icon {
+    background-color: #002a7f;
+}
+
+#top-bar, #middle-bar, #bottom-bar {
+    width: 18px;
+    height: 2px;
+    display: block;
+}
+
+#middle-bar, #bottom-bar {
+    margin-top: 4px;
+}
+
+section {
+    width: 100%; 
+    display: inline-block;
+    position: relative; 
+}
+
+
+
+#landing {
+    height: 100vh;
+    background: #ffffff;
+    background-image: url("../img/landing_bg_sun_low.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    float: left;
+    z-index: 1;
+    position: relative;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 10px solid #ffffff;
+    /*border-image: url("../img/landing_bg_sun_border.jpg") 20 20 70 20;*/
+    }
+
+#greeting h1 {
+    font-size: 29px;
+    line-height: 35px;
+}
+
+#landing-text {
+    width: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
+    position: relative;
+    z-index: 1;
+    top: 39%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+}
+
+#intro-text p {
+    font-size: 14px;
+    color: #ffffff;
+    margin-top: 10px;
+    font-family: "usual",sans-serif;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+#landing button {
+    position: absolute;
+    width: 132px;
+    height: 34px;
+    background-color: #002a7f;
+    color: #ffffff;
+    left: 50%;
+    margin-left: -66px;
+    bottom: 10%;
+    font-family: "usual",sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+#read-more {
+    cursor: pointer;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+/*ABOUT*/
+#about {
+    /*border-bottom: 1px solid #002a7f;*/
+    padding-bottom: 30px;
+}
+
+.sec-title, .sec-title-portfolio  {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sec-title {
+    width: 118px;
+}
+
+.sec-title  img {
+    height: 29px;
+    width: 118px;
+}
+
+.sec-title-portfolio {
+    width: 162px;
+    margin-top: 45px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sec-title-portfolio img {
+    width: 162px;
+    height: 29px;
+}
+
+#about-image-wrap {
+    margin-top: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#about-image-wrap img {
+    width: 100%;
+    max-width: 750px;
+}
+
+#about-image-text {
+    margin-top: 50px;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.inbtw {
+    font-size: 22px;
+    font-family: "adobe-garamond-pro",serif;
+    font-weight: 400;
+}
+
+#about-image-text p, .b-i {
+    font-weight: 700;
+    font-style: italic;
+}
+
+.aboutend {
+    width: 100%;
+    height: 10px;
+    background-image: url("../img/about_end.jpg");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    bottom: 0;
+}
+
+/*divide sections*/
+#divide {
+    width: 50px;
+    height: 2px;
+    margin: 0 auto;
+    background-color: #002a7f;
+}
+
+/*PORTFOLIO*/
+#portfolio {
+    margin-bottom: 30px;
+}
+
+#chronicles, #seaside-template, #weather-app, #skate-app {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    display: block;
+}
+
+.portfolio-image-wrap {
+    width: 100%;
+}
+
+#chronicles img, #seaside-template img, #skate-app img {
+    width: 100%;
+}
+
+#weather-app img {
+   width: 50%;
+   margin-left: 25%;
+}
+
+
+#chronicles, #seaside-template, #weather-app, #skate-app {
+    margin-top: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+  
+}
+
+.portfolio-text {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#portfolio a{
+    display: block;
+    font-size: 16px;
+    color: #002a7f;
+    font-weight: 800;
+    text-decoration: underline;
+    width: 50px;
+}
+
+#portfolio a:hover {
+    text-decoration: none;
+}
+
+
+.coming-soon {
+    font-family: "usual",sans-serif;
+    font-size: 16px;
+    color: #002a7f;
+    font-weight: 800;
+}
+
+
+
+
+
+/***** CONTACT *****/
+#contact {
+    background-color: #002a7f;
+    padding-bottom: 0;
+}
+
+#contact-title {
+    text-align: center;
+    padding-top: 30px;
+}
+
+#contact h1 {
+    color: #ffffff;
+}
+
+#contact p {
+    color: #ffffff;
+    line-height: 0;
+}
+
+fieldset {
+    border: none;
+    padding: none;
+}
+
+#contact-content-wrap {
+    width: 252px;
+    margin-top: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+.line-two {
+    margin-top: 33px;
+}
+
+#social-media {
+    margin-top: 38px;
+}
+
+a {
+    cursor: pointer;
+}
+
+.shift {
+    margin-left: 20px;
+} 
+form {
+    margin-top: 25px;
+}
+label, input, textarea {
+    font-family: "adobe-garamond-pro",serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+input, textarea {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+}
+
+input {
+    width: 195px;
+    float: right;
+    background-color: #002a7f;
+    border-bottom: 1px solid #ffffff;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #ffffff;
+    line-height: 0;
+    padding: 0;
+}
+
+textarea {
+    background-color: #002a7f;
+    border: 1px solid #ffffff;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.name, .email, .phone {
+    margin-bottom: 35px;
+}
+
+.name input, .email input, .phone input {
+    margin-left: 5px;
+}
+
+#send-btn {
+    float: none;
+    border: none;
+    font-family: "usual", sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 800;
+    text-decoration: underline;
+    line-height: 20px;
+    text-align: left;
+}
+
+textarea {
+
+}
+
+.footend {
+    width: 100%;
+    height: 20px;
+    background-image: url("../img/footer_end.jpg");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+@media screen and (max-height: 350px) {
+#logo-overlay {
+   
+    width:220px;
+    height: 220px;
+    margin-left: -110px;
+    margin-top: -110px;
+
+}
+
+#logo-underlay {
+   
+    width: 150px;
+    height: 150px;
+    margin-top: -105px;
+    margin-left: -105px;
+}
+
+#load-bar-cont {
+    width: 140px;
+    height: 140px;
+    margin-top: -70px;
+    margin-left: -70px; 
+}
+
+} 
+
+
+@media only screen and (min-width: 540px) {
+    #chronicles, #seaside-template, #weather-app, #skate-app {
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    h1 {
+        font-size: 50px;
+        line-height: 55px;
+    }
+
+    #landing-text {
+        width: 200px;
+    }
+
+    #greeting {
+        width: 200px;
+    }
+
+    #about-image-text {
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .sec-title {
+        width: 182px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .sec-title img {
+        width: 182px;
+        height: 45px;
+    }
+
+    .sec-title-portfolio {
+        width: 240px;
+
+    }
+
+     .sec-title-portfolio img {
+        width: 240px;
+        height: 45px;
+    }
+
+    .portfolio-text {
+        width: 400px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    
+    .open-nav {
+        width: 463px;
+    }
+
+    nav {
+        width: 463px;
+    }
+
+    #landing-text {
+        width: 412px;
+    }
+
+    #intro-text p {
+        padding-left: 5px;
+        font-size: 16px; 
+    }
+
+    #greeting h1 {
+        margin-bottom: 0em;
+        font-size: 45px;
+        line-height: 45px;
+        width: 370px;
+    }
+
+
+    /*#about-image-wrap {
+        margin-left: 30px;
+        margin-right: 30px;
+        max-width: 950px;
+    }*/
+
+    #about {
+        padding-bottom: 50px;
+    }
+
+    #about-image-wrap img {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+   
+    #seaside-template, #chronicles, #weather-app, #skate-app {
+        max-width: 900px;
+        margin-top: 50px;
+        margin-right: 50px;
+        margin-bottom: 50px;
+        margin-left: 50px;
+    }
+
+    .portfolio-image-wrap {
+        width: 100%;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .portfolio-image-wrap img {
+        width: 100%;
+    }
+
+    .portfolio-image-wrap {
+        max-width: 800px;
+    }
+
+    .portfolio-text {
+        margin-left: 80px;
+        margin-right: auto;
+    }
+
+    #contact-content-wrap {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        width: 505px;
+    }
+
+    #contact-right {
+        float: right;
+        margin-left: 50px;
+    }
+
+    .aboutend {
+        height: 20px;
+    }
+
+    .footend {
+        height: 40px;
+    }
+
+}
+
+@media only screen and (min-width: 810px) {
+   #about-image-wrap {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 750px;
+    } 
+}
+
+@media only screen and (min-width: 1000px) {
+    #chronicles, #seaside-template, #weather-app, #skate-app {
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media only screen and (min-width: 1150px) {
+    #portfolio {
+        margin-bottom: 70px;
+    }
+
+    #chronicles, #seaside-template, #weather-app, #skate-app {
+        position: relative;
+        margin-top: 100px;
+    }
+
+    #chronicles  {
+        max-width: 1100px;
+    }
+
+    #seaside-template {
+        max-width: 1300px;
+        clear: both;
+    }
+
+     #weather-app {
+        max-width: 1550px;
+        clear: both;
+     }
+
+     #skate-app {
+        max-width: 1100px;
+        clear: both; 
+        top: 100px;
+        margin-bottom: 100px;
+        overflow: hidden; 
+     }
+
+     #skate-app img {
+        width: 100%;
+     }
+
+
+    #chronicles img {
+        width: 100%;
+    }
+
+    #chronicles .portfolio-image-wrap {
+        float: left;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    #seaside-template .portfolio-image-wrap {
+        float: right;
+        margin-right: 0;
+        width: 100%;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    #weather-app .portfolio-image-wrap {
+        float: left;
+        margin-left: 0;
+        width: 100%; 
+    }
+
+    #skate-app .portfolio-image-wrap {
+        float: right;
+        margin-right: 0;
+        width: 100%; 
+    }
+
+    #chronicles-portfolio-text  {
+        position: absolute;
+        top:30px;
+        right: 0;
+    }
+
+    #seaside-template-text {
+        position: absolute;
+        top: 100px;
+        right: 60%;
+
+    }
+
+    #weather-app-text  {
+        position: absolute;
+        top:30px;
+        left: 550px;
+    }
+
+    #skate-app-text {
+        position: absolute;
+        top: 100px;
+        right: 55%; 
+    }
+
+} 
+
+
+@media only screen and (min-width: 1319px) {
+    #chronicles, #seaside-template, #weather-app {
+        margin-left: auto;
+        margin-right: auto; 
+    }
+}
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
